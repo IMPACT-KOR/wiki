@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색 결과</title>
+    {% load static %}  <!-- Django에서 정적 파일 로드를 위한 태그 -->
+    <link rel="stylesheet" href="{% static 'css/search_result.css' %}">  <!-- search_result.css 파일 연결 -->
+</head>
+<body>
+
+    <h1>검색 결과</h1>
+
+    <!-- 검색어가 있을 경우 -->
+    {% if query %}
+        <p>검색어: "{{ query }}"</p>
+
+        <!-- 관련된 데이터베이스 항목이 있을 경우 -->
+        {% if related_entries %}
+            <ul>
+                {% for entry in related_entries %}
+                    <li>
+                        <strong>{{ forloop.counter }}.</strong> <!-- 번호 표시 -->
+                        <!-- 파일명에서 .html 확장자를 제외하고 URL 패턴에 맞춰 링크를 설정 -->
+                        <a href="{% url 'render_page' entry.title|slugify %}">{{ entry.title }}</a>
+                        <p>{{ entry.preview }}</p>  <!-- 미리보기 내용 -->
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>관련된 데이터베이스를 찾을 수 없습니다.</p>
+        {% endif %}
+    {% else %}
+        <p>검색어가 입력되지 않았습니다.</p>
+    {% endif %}
+
+</body>
+</html>

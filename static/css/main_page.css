@@ -1,0 +1,123 @@
+body {
+    background-color: #B7E0FF;
+    font-family: 'Pretendard', sans-serif;
+}
+
+.title-box {
+    background-color: #FFF5CD;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.title-box h1 {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.ad-box {
+    width: 35%; /* 광고 박스의 너비 */
+    max-width: 900px; /* 최대 가로 크기 제한 */
+    margin: 0 auto;
+    background-color: #FFF5CD;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 10px; /* 광고 박스 내부 여백 추가 */
+    box-sizing: border-box; /* 내부 padding까지 크기 포함 */
+    display: flex;
+    justify-content: center; /* 프레임을 가로 방향으로 중앙에 위치 */
+    align-items: center; /* 프레임을 세로 방향으로 중앙에 위치 */
+}
+
+.ad-label {
+    position: absolute;
+    top: 15px; /* 광고 박스 내 좌상단 여백 */
+    left: 15px;
+    font-size: 12px;
+    color: #555;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2px 5px;
+    border-radius: 3px;
+    z-index: 10;
+}
+
+.frame-box {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3 / 1; /* 프레임의 가로:세로 비율 고정 */
+    background-color: #FFF;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; /* 프레임 밖 이미지 숨김 */
+}
+
+.frame-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 프레임을 넘치더라도 채워짐 */
+    position: absolute;
+    right: 0;
+    transition: right 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.frame-box img.fade {
+    opacity: 1;
+    right: 0;
+}
+
+.search-box {
+    background-color: #FFCFB3;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.content-box {
+    width: 80%;
+    margin: 0 auto; /* 가운데 정렬 */
+    background-color: #FFF5CD;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.collapsible {
+    width: 80%;
+    margin: 0 auto; /* 전체 박스를 가운데 정렬 */
+    background-color: #FFF5CD;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* 텍스트와 화살표를 모두 가운데 정렬 */
+    align-items: center; /* 세로 정렬 */
+    position: relative; /* 화살표 위치를 절대 위치로 설정할 수 있게 함 */
+}
+
+.collapsible .arrow {
+    font-size: 18px; /* 화살표 크기 조정 */
+    position: absolute; /* 텍스트와 겹치지 않도록 절대 위치 설정 */
+    right: 20px; /* 화살표를 오른쪽 끝에 배치 */
+}
+
+.collapsible-content {
+    padding: 10px;
+    display: none;
+    background-color: #FFCFB3;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}

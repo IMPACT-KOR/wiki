@@ -1,0 +1,47 @@
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: #FFF5CD; /* 따뜻한 배경색 */
+    margin: 20px;
+}
+
+.title {
+    font-size: 60px;
+    text-align: center;  /* 가운데 정렬 */
+    margin-bottom: 20px;
+    color: #FF8C94; /* 귀엽고 활기찬 색상 추가 */
+}
+
+.divider {
+    width: 80%;
+    border: 2px solid #FFCFB3; /* 구분선을 더 두껍게 하고 부드러운 색으로 */
+    margin: 0 auto; /* 가운데 정렬 */
+    margin-bottom: 30px;
+}
+
+.content {
+    margin-top: 30px;
+    background-color: #FFCFB3; /* 섹션마다 다른 배경색으로 구분 */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 살짝 그림자 추가 */
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #FF8C94; /* 강조 색상 추가 */
+    text-align: center; /* 섹션 타이틀을 가운데 정렬 */
+}
+
+.section-content {
+    font-size: 18px;
+    line-height: 1.8; /* 가독성을 높이기 위해 줄 간격을 늘림 */
+    color: #333; /* 내용은 차분한 색상 유지 */
+    text-align: left; /* 본문 내용은 왼쪽 정렬 */
+    padding: 10px;
+    background-color: #FFF5CD; /* 내용 섹션을 따로 구분할 수 있도록 배경색 지정 */
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* 살짝 그림자 */
+}
+
