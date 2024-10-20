@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',  # 로컬호스트
     'localhost',
-    '*.ngrok-free.app',  # 모든 ngrok-free.app 도메인을 허용
+    '0e50-211-245-255-11.ngrok-free.app',
 ]
 
 # Application definition
