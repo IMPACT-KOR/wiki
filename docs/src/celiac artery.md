@@ -1,3 +1,13 @@
+---
+title: "Celiac artery"
+author: "Daeseong Kim"
+date: "2024-10-23"
+type: "Anatomy"
+summary: "복강동맥에 대한 내용."
+tags: ["abdomen", "terminology"]
+---
+# 복강동맥 Celiac artery
+
 복강동맥(celiac artery) 또는 복강간(celiac trunk)은 짧고 넓은 동맥으로, 복부 대동맥에서 분지하여 전장(foregut)에 혈액을 공급합니다.
 
 위치
